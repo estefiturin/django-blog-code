@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hola mundo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+       
+        <h1>Hola, {{ name }}</h1>
+        <p> Tengo: {{ years }} años</p>
+        <p>Este es mi primer template con DJANGO</p>
+
+        <h3>Mis lenguajes:</h3>
+        <ul>
+            {% for code in codes %}
+                <li>{{ code }}</li>
+            {% endfor %}
+        </ul>
+        
+    </body>
+</html>
